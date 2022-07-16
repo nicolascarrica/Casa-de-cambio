@@ -1,0 +1,24 @@
+{
+  "name": "casa-de-cambio",
+  "version": "1.0.0",
+  "description": "App de casa de cambio usando API para el curso de r-argentina programa",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolascarrica/casa-de-cambio.git"
+  },
+  "author": "Nico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolascarrica/casa-de-cambio/issues"
+  },
+  "homepage": "https://github.com/nicolascarrica/casa-de-cambio#readme",
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0"
+  }
+}
