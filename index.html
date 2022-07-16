@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='src/style.css'>
+    <title>Casa de cambio</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <h1>Convertidor de monedas</h1>
+
+        <div id="conversor-monedas">
+
+            <div class="row justify-content-start">
+                <div class="col-sm-3">
+                    <label for="fecha-conversion" class="col-2 col-form-label">Fecha</label>
+                    <input id="fecha-conversion"  class="form-select" type="date">
+                </div> 
+            </div><br>
+
+
+            <div class="form-floating contenedor-divisas-busqueda ">
+                <select id="monedas" class="formato-entrada-texto col-sm-2"></select>
+                    <option></option>
+                <button id="actualizar" class="btn btn-primary">Ver Cambios</button>
+                <div>
+                    Ultima Actualización:
+                    <span id="ultima-actualizacion"> </span>
+                </div>
+            </div>
+        
+            <div class="container contenedor-tabla">
+                <table class="table table-bordered" id="tabla">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Moneda</th>
+                            <th>Cotización</th>
+                        </tr>
+                    </thead>
+                    <tbody id="informacion-tabla">
+        
+                    </tbody>
+                </table>
+            </div>
+
+    </main>
+
+    <script type="text/javascript" src="src/casa-de-cambio.js"></script>
+</body>
+</html>
