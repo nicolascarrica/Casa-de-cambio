@@ -10,31 +10,28 @@
 </head>
 <body>
     <main class="container-fluid">
-        <h1>Convertidor de monedas</h1>
+        <h1>Cotización de monedas</h1>
 
         <div id="conversor-monedas">
 
-            <div class="row justify-content-start">
-                <div class="col-sm-3">
-                    <label for="fecha-conversion" class="col-2 col-form-label">Fecha</label>
-                    <input id="fecha-conversion"  class="form-select" type="date">
-                </div> 
-            </div><br>
-
 
             <div class="form-floating contenedor-divisas-busqueda ">
-                <select id="monedas" class="formato-entrada-texto col-sm-2"></select>
-                    <option></option>
-                <button id="actualizar" class="btn btn-primary">Ver Cambios</button>
                 <div>
-                    Ultima Actualización:
+                    <label><strong>Seleccione una divisa</strong></label>
+                    <select id="monedas" class="formato-entrada-texto col-sm-2"></select>     
+                    <button id="actualizar" class="btn btn-primary">Ver Cambios</button>
+                </div>
+                <div>
+                    <strong>Ultima Actualización:
                     <span id="ultima-actualizacion"> </span>
+                    </strong>
+
                 </div>
             </div>
         
             <div class="container contenedor-tabla">
-                <table class="table table-bordered" id="tabla">
-                    <thead class="table-primary">
+                <table class="table table-bordered table-hover" id="tabla">
+                    <thead class="table-warning">
                         <tr>
                             <th>Moneda</th>
                             <th>Cotización</th>
