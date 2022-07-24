@@ -10,16 +10,15 @@
 </head>
 <body>
     <main class="container-fluid">
+
         <h1>Cotización de monedas</h1>
-
-        <div id="conversor-monedas">
-
-
-            <div class="form-floating contenedor-divisas-busqueda ">
+        <div class="form-floating contenedor-divisas-busqueda">
                 <div>
-                    <label><strong>Seleccione una divisa</strong></label>
+                    <label><strong>Moneda Base</strong></label>
                     <select id="monedas" class="formato-entrada-texto col-sm-2"></select>     
-                    <button id="actualizar" class="btn btn-primary">Ver Cambios</button>
+                    <button id="actualizar" class="btn btn-primary">Ver Cotizacion</button>
+                    <button id="convertidor" class="btn btn-primary">Convertidor</button>
+                    
                 </div>
                 <div>
                     <strong>Ultima Actualización:
@@ -27,9 +26,9 @@
                     </strong>
 
                 </div>
-            </div>
+        </div>
         
-            <div class="container contenedor-tabla">
+        <div class="container contenedor-tabla">
                 <table class="table table-bordered table-hover" id="tabla">
                     <thead class="table-warning">
                         <tr>
@@ -41,8 +40,26 @@
         
                     </tbody>
                 </table>
-            </div>
+        </div>
 
+
+        <div class="contenedor-convertir oculto">
+            <label><strong>Desde</strong></label>
+            <select id="moneda-inicial" class="formato-entrada-texto col-sm-2"></select>            
+            <label><strong>Hacia</strong></label>
+            <select id="moneda-final" class="formato-entrada-texto col-sm-2"></select>
+            <input id="cantidad-conversion" class="formato-entrada-texto" type="number" min="0" placeholder="Ingrese cantidad">
+            <button id="convertir" class="btn btn-primary">Convertir</button>
+            <button id="volver" class="btn btn-primary">Volver</button>
+        </div>
+
+        <div class="contenedor-resultado oculto">
+            <span id="texto-resultado"><strong>Resultado Conversión</strong></span>
+            <strong><input disabled type="text" id="resultado" class="formato-entrada-texto"></strong>
+            <strong><span id="texto-final"></span></strong>
+        </div>
+
+        
     </main>
 
     <script type="text/javascript" src="src/casa-de-cambio.js"></script>
